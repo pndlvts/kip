@@ -1,0 +1,27 @@
+- BEMPUG.modifier = '_';
+
+mixin location
+    +b('locations')
+        +e('countries', {t: 'ul'})
+            +e('country', {t: 'li'})
+                +e('country-link', {t: 'div data-country=rb'}) Республика Беларусь
+                +e('cities', {t:'ul data-cities=rb'})
+                    +e('city', {t:'li'})
+                        +e('a href=https://kipservis.ru/kipservis_vitebsk.htm') г. Витебск
+            +e('country', {t: 'li'})
+                +e('country-link', {t: 'div data-country=ru', m: 'active'}) Российская Федерация
+                +e('cities', {t: 'ul data-cities=ru', m: 'active'})
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_moscow.htm') г. Москва
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_peterburg.htm') г. Санкт-Петербург
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_krasnodar.htm') г. Краснодар
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_lipetsk.htm') г. Липецк
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_omsk.htm') г. Омск
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_rostove.htm') г. Ростов-на-Дону
+                    +e('city', {t: 'li'})
+                        +e('a href=https://kipservis.ru/kipservis_perm.htm') г. Пермь

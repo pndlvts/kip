@@ -1,0 +1,10 @@
+- BEMPUG.modifier = '_';
+
+include ../../blocks/location/location
+include ../../blocks/addr/addr
+mixin main
+    +b('main')
+        +e('wrapper')
+            +e('container')
+                +location
+                +addr

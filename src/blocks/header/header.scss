@@ -1,0 +1,44 @@
+.header {
+  background-image: url("../../assets/media/bg_red.gif");
+  height: 37px;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  &__container{
+    @include container();
+    justify-content: flex-start
+  }
+  &__logo{
+    display: block;
+    text-decoration: none;
+    background: url("../../assets/media/logo.gif") 8px 0 no-repeat;
+    height: 37px;
+    width: 335px;
+    position: absolute;
+    z-index: 2;
+  }
+  &__search {
+    height: 37px;
+    width: 450px;
+    background-image: url("../../assets/media/bg_logo.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #000;
+  }
+    &__search-input{
+      width: 203px;
+      height: 19px;
+      border: 1px solid rgb(127, 157, 185);
+      padding-left: 5px;
+    }
+  &__search-btn{
+    width: 66px;
+    height: 19px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}

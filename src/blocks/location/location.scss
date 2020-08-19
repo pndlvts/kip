@@ -1,0 +1,73 @@
+.locations{
+  width: 230px;
+  height: auto;
+  &__country{
+    background: rgb(36, 68, 97);
+    margin-bottom: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    color: $greyl;
+    cursor: pointer;
+  }
+  &__country-link{
+    display: block;
+    padding: 5px 15px;
+  }
+  &__country-link:before{
+    vertical-align: top;
+    content: " ";
+    display: inline-block;
+    background: none;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $greyl;
+    border-right: 2px solid $greyl;
+    transform: rotate(45deg);
+    margin-right: 5px;
+    transition: .5s;
+  }
+  &__country-link_active:before{
+    vertical-align: top;
+    content: " ";
+    display: inline-block;
+    background: none;
+    border-top: 2px solid $greyl;
+    border-right: 2px solid $greyl;
+    transform: rotate(135deg);
+    margin-right: 5px;
+    transition: .5s;
+  }
+  &__cities{
+    overflow: hidden;
+    max-height: 0px;
+    transition: .5s;
+  }
+  &__cities_active{
+    max-height: 500px;
+    transition: .5s;
+  }
+  &__city{
+    padding: 5px 15px;
+    background: $greyl;
+    color: rgb(36, 68, 97);
+    border-bottom: 1px solid $light;
+    font-weight: normal;
+  }
+  &__city:hover{
+    padding: 5px 15px;
+    background: rgb(36, 68, 97);
+    color: $greyl;
+    border-bottom: 1px solid $light;
+    font-weight: normal;
+  }
+  &__city:before{
+    content: " ";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 1px solid crimson;
+    border-right: 1px solid crimson;
+    margin-right: 5px;
+    transform: rotate(45deg);
+  }
+}

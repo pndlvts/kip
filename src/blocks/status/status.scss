@@ -1,0 +1,69 @@
+.status{
+  width: 100%;
+  height: 44px;
+  background: $dark-blue;
+  border: 4px solid rgb(0, 49, 91);
+  overflow: hidden;
+  &__container{
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+  }
+  &__left-block{
+    background-image: url("../../assets/media/micro_form.gif");
+    background-repeat: no-repeat;
+    height: 44px;
+    width: 277px;
+    min-width: 277px;
+    padding-left: 15px;
+    position: relative;
+  }
+  &__text{
+    font-size: 12px;
+    color: rgb(0, 49, 91);
+    display: block;
+  }
+  &__status{
+    vertical-align: top;
+    display: inline-block;
+    height: 18px;
+    background: $light;
+    border-radius: 50px;
+    border: none;
+    -webkit-box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.75);
+    padding: 1px 6px;
+  }
+  &__wtf{
+    vertical-align: top;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url("../../assets/media/wtf.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__send-num{
+    text-transform: uppercase;
+    color: $light;
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 44px;
+    width: 40px;
+    cursor: pointer;
+  }
+  &__city{
+    color: $light;
+    max-width: 700px;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+}

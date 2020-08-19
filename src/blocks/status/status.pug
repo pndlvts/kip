@@ -1,0 +1,14 @@
+- BEMPUG.modifier = '_';
+
+mixin status
+    +b('status')
+        +e('wrapper')
+            +e('container')
+                +e('left-block')
+                    form(action="https://totalkip.ru/status.php" method="post")
+                    +e('text', {t: 'span'}) проверка состояния счета:
+                    +e('wtf', {t: 'a href=https://kipservis.ru/addons/schet/schet_help.htm target=__blank'})
+                    +e('status', {t: 'input type=text placeholder=пароль'})
+                    +e('send-num', {t: 'input type=submit value=OK'})
+                +e('right-block')
+                    +e('city') Промышленная автоматика. КИП-Сервис г. Петропавловск-Камчатский

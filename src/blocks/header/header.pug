@@ -1,0 +1,10 @@
+- BEMPUG.modifier = '_';
+
+mixin header
+    +b('header', {t: 'header'})
+        +e('wrapper')
+            +e('container')
+                +e('logo', {t: 'a href=index.html'})
+        +e('search')
+            +e('search-input', {t: 'input type=text placeholder=Поиск'})
+            +e('search-btn', {t: 'input type=button value=Найти'})

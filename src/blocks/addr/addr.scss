@@ -1,0 +1,114 @@
+.addr{
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 100%;
+  &__breadcrumbs a:first-child{
+    margin-left: 0;
+  }
+  &__breadcrumbs a, a:active, a:visited{
+    display: inline-block;
+    color: $dark-blue;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  &__breadcrumbs a:before{
+    content: " ";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 1px solid crimson;
+    border-right: 1px solid crimson;
+    margin-right: 5px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+  }
+  &__title{
+    line-height: 26px;
+    margin: 8px 0;
+    font-size: 16px;
+    color: $dark-blue;
+    background: rgb(226, 232, 237);
+    padding: 0 0 0 5px;
+    font-weight: bold;
+  }
+  &__message{
+    width: 52%;
+    margin: 2em auto;
+    border: 8px solid rgb(70, 130, 180);
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 2em;
+  }
+  &__who{
+    text-align: center;
+    color: $dark-blue;
+    font-size: 14px;
+  }
+  &__txt, &__weare{
+    margin-top: 7px;
+    font-size: 9pt;
+    color: $black;
+  }
+  &__weare{
+    font-style: italic;
+    text-align: right;
+  }
+  &__name{
+    font-size: 14px;
+    color: $black;
+    font-weight: bold;
+  }
+  &__main-info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    max-width: 410px;
+  }
+  &__status-block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__shop-status{
+    padding: 8px;
+  }
+  &__shop-status_open{
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  &__common-info{
+    margin-top: 10px;
+    font-size: 9pt;
+    color: $black;
+  }
+  .e-mail{
+    color: $dark-blue;
+  }
+  .payment{
+    text-align: center;
+  }
+  .gerb{
+    width: 250px;
+    height: 250px;
+  }
+  .print{
+    vertical-align: top;
+    font-size: 12px;
+    color: $dark-blue;
+  }
+  .print:hover{
+    text-decoration: underline;
+  }
+  iframe{
+    width: 100%;
+    height: 450px;
+  }
+}
+@include to-sm(){
+  .gerb, .print{
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.footer{
+  padding: 10px 8px 24px 8px;
+  background: rgb(0, 49, 91);
+  &__container{
+    @include container();
+  }
+  &__main{
+    display: flex;
+  }
+  &__menu{
+    margin-bottom: 24px;
+    text-align: center;
+    background: url("../../assets/media/back_txtmenu.gif");
+    border: 1px solid #95bcd9;
+  }
+  .menu-link, .menu-link:active, .menu-link:visited{
+    display: inline-block;
+    color: #95bcd9;
+    font-weight: bold;
+    font-size: 9pt;
+    text-decoration: underline;
+  }
+  .menu-link:hover{
+    color: $light;
+  }
+  .menu-link:after{
+    content: "|";
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .menu-link:last-child:after{
+    content: " ";
+  }
+  &__left{
+    width: 30%;
+    font-size: 9pt;
+    .footer__left-item{
+      display: inline-block;
+      line-height: 15px;
+    }
+    .footer__left-item:last-child:after{
+      display: none;
+    }
+    .footer__left-item:after{
+      content: " ";
+      display: inline-block;
+      height: 2px;
+      width: 2px;
+      background: #95bcd9;
+      vertical-align: middle;
+    }
+    .footer__left-link{
+      color: #95bcd9;
+      text-decoration: underline;
+    }
+    .footer__left-link:hover{
+      color: $light;
+    }
+  }
+  &__right{
+    width: 70%;
+  }
+  &__title{
+    color: #95bcd9;
+    font-weight: bold;
+    text-align: center;
+    a, a:visited, a:active{
+      color: $light-blue;
+      text-decoration: underline;
+    }
+  }
+  &__contacts-list{
+    columns: 3;
+    column-gap: 5%;
+  }
+  &__item{
+    font-size: 14px;
+    line-height: 24px;
+    a, a:active, a:visited{
+      color: #95bcd9;
+      text-decoration: underline;
+    }
+    .tel, a:active, a:visited{
+      color: $light;
+      text-decoration: none;
+    }
+  }
+}

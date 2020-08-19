@@ -1,0 +1,41 @@
+- BEMPUG.modifier = '_';
+
+mixin addr
+    +b('addr')
+        +e('breadcrumbs')
+            a(href='https://kipservis.ru/') Приборы КИПиА. Главная
+            a(href='https://kipservis.ru/contacts.htm') Контакты
+            a(href='#!') г. Петропаловск-Камчатский
+        +e('title', {t: 'h2'}) г. Петропаловск-Камчатский: региональный склад КИП-Сервис
+        +e('message')
+            +e('who', {t: 'h4'}) Уважаемые клиенты!
+            +e('txt', {t: 'p'})
+                b Офис доступен для посещения
+                |  и работает в режиме пункта выдачи дистанционной торговли. Выдача товара производится по предварительному звонку
+                b  8 800 775-46-82
+                | .
+            +e('txt', {t: 'p'})  При себе иметь доверенность или печать организации. Действует только безналичный расчет.
+            +e('weare', {t: 'p'}) С уважением, Коллектив ООО «КИП-Сервис»
+        +e('main-info')
+            +e('left')
+                +e('name') ООО «КИП-Сервис» — Петропаловск-Камчатский
+                +e('status-block')
+                    +e('shop-status', {t: 'span', m: 'open'})
+                        b  Офис доступен для посещения
+                        |  (режим пункта выдачи)
+                +e('common-info')  г. Уфа, ул. Трамвайная, 2Г, офис 214 (2 этаж)
+                +e('common-info') Режим работы: ПН—ПТ с 8:00 до 13:00
+                +e('common-info') Тел. 8 800 775-46-82
+                    br
+                    |  Тел. +7 (347) 225-52-71
+                a(class='addr__common-info e-mail' href='mailto:order@kipservis.ru') order@kipservis.ru
+                +e('common-info payment')
+                    img(src='assets/media/card.png')
+            +e('right')
+                a(href='#!' class="print") Распечатать схему проезда и контакты
+                img(src='assets/media/Gerb_pk.jpg' class='gerb')
+        +e('title', {t: 'h2'}) г. Петропаловск-Камчатский: схема проезда
+        div(style="position:relative;overflow:hidden;")
+            a(href="https://yandex.ru/maps/78/petropavlovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;") Петропавловск‑Камчатский
+            a(href="https://yandex.ru/maps/78/petropavlovsk/house/naberezhnaya_ulitsa_30/ZUwOaAFkT0EDXUJvYGJxc3pkYQ4=/?ll=158.646440%2C53.026756&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;") Яндекс.Карты
+            iframe(src="https://yandex.ru/map-widget/v1/-/CCQtmBaodB" frameborder="0" allowfullscreen="true" style="position:relative;")

@@ -1,0 +1,19 @@
+include ../node_modules/bempug/index
+    - BEMPUG.modifier = '_';
+
+//- blocks imports
+include ./blocks/header/header
+include ./blocks/navigation/navigation
+include ./blocks/status/status
+include ./blocks/main/main
+include ./blocks/footer/footer
+- titleVar = 'ООО «КИП-сервис» – региональный склад в г. Петропавловск-Камчатский. КИП-Сервис в Петропавловске-Камчатском: контакты, режим работы, способы оплаты'
+doctype html
+html
+    include ./blocks/head/head
+    body
+        +header
+        +navigation
+        +status
+        +main
+        +footer
